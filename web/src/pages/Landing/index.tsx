@@ -19,7 +19,7 @@ function Landing() {
     api.get('connections').then(response => {
       setTotalConnections(response.data.total);
     });
-  }, [totalConnections]);
+  }, []);
 
   return (
     <div id="page-landing">
